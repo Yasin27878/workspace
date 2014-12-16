@@ -17,10 +17,11 @@ public class MultiExceptionTest {
 		} catch (IndexOutOfBoundsException|NumberFormatException|ArithmeticException ie) {
 			// TODO: handle exception
 			System.out.println("程序发生数组越界,数字格式异常,算术异常之一");
-			ie = new ArithmeticException("test");
+			//ie = new ArithmeticException("test");
 		}catch (Exception e) {
 			System.out.println("未知异常");// TODO: handle exception
-			e= new RuntimeException( "test");
+			e= new RuntimeException("test");
+			
 		}
 		
 	}
