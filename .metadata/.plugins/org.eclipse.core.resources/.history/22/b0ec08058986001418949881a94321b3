@@ -1,0 +1,23 @@
+package com.set;
+
+import java.util.TreeSet;
+
+public class TreeSetTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		TreeSet ts=new TreeSet();
+		ts.add(3);
+		ts.add(4);
+		ts.add(-3);
+		ts.add(9);
+		ts.add(-15);
+		ts.add(0);
+		ts.add(56);
+		System.out.println(ts);
+	}
+
+}
