@@ -24,7 +24,6 @@ public class TreeSetDemo {
 		 ts.add(new Person(6,"sogou"));
 		 ts.add(new Person(3,"sogou"));
 		 ts.add(new Person(8,"sogou"));
-		 System.out.println(ts);
 		
 		for (Iterator iterator = ts.iterator(); iterator.hasNext();) {
 			Object object = (Object) iterator.next();
