@@ -1,0 +1,40 @@
+package com.text;
+
+import java.security.AlgorithmConstraints;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		ArrayList al=new ArrayList();
+		
+		for (int i = 0; i < 5; i++) {
+			al.add("it"+i);//自动装箱		基本类型封装成对象
+		
+		}
+		//遍历
+		for (int i = 0; i < al.size(); i++) {
+			System.out.println(al.get(i));	
+		}
+		for (Iterator iterator = al.iterator(); iterator.hasNext();) {
+			Object object = (Object) iterator.next();
+			System.out.println(object);
+		}
+		for (Object ob : al) {
+			
+			System.out.println(ob);
+		}
+//		Iterator it = new Iterator();
+//		while (it.hasMoreElements()) {
+//			type type = (type) it.nextElement();
+//			System.out.println(it);
+//		}
+		
+	}
+
+}

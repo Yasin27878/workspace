@@ -1,0 +1,95 @@
+package com.text;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedList ll= new LinkedList();
+		Collection ll1=new LinkedList();
+		for (int i = 0; i < 10; i++) {
+			ll.add("林志玲"+i);
+		}
+		System.out.println(ll);
+		
+		for (int i = 0; i < 10; i++) {
+			ll.add("周润发"+i);
+		}
+		//add(int index, E element) 在此列表中指定的位置插入指定的元素。
+		ll.add(2, "刘德华");
+		System.out.println(ll);
+		
+		//addAll(Collection<? extends E> c) 添加指定 collection 中的所有元素到此列表的结尾，顺序是指定 collection 的迭代器返回这些元素的顺序。
+	     System.out.println(ll.addAll(ll1));
+		
+		//addFirst(E e) 将指定元素插入此列表的开头。
+		ll.addFirst("习大大");
+		System.out.println(ll);
+		
+		//clone() 返回此 LinkedList 的浅表副本。
+		//LinkedList l2= new LinkedList();
+		LinkedList l2=(LinkedList)ll.clone(); 
+		System.out.println(l2);
+		
+		//contains(Object o) 
+       // 如果此列表包含指定元素，则返回 true。
+		System.out.println(ll.contains("刘德华"));
+		
+		//descendingIterator() 
+        //返回以逆向顺序在此双端队列的元素上进行迭代的迭代器。
+		for (Iterator ll4 = ll.descendingIterator(); ll4.hasNext();) {
+			Object object = (Object) ll4.next();
+			System.out.println(object);
+		}
+		
+		System.out.println("==========");
+		
+		//element() 
+       // 获取但不移除此列表的头（第一个元素）。
+		System.out.println(ll.element());
+		System.out.println(ll);
+		
+		//get(int index) 
+        //返回此列表中指定位置处的元素。
+		System.out.println(ll.get(3));
+		
+		//getFirst() getLast() 
+		//  返回此列表的第一个元素。返回此列表的最后一个元素。
+		System.out.println(ll.getFirst());
+		System.out.println(ll.getLast());
+		
+		//indexOf(Object o) lastIndexOf(Object o) 
+        //返回此列表中最后出现的指定元素的索引，如果此列表中不包含该元素，则返回 -1。
+       // 返回此列表中首次出现的指定元素的索引，如果此列表中不包含该元素，则返回 -1。
+		System.out.println(ll.indexOf("刘德华"));
+		System.out.println(ll.lastIndexOf("黎明"));
+		
+		//offer(E e) 
+        //将指定元素添加到此列表的末尾（最后一个元素）。 
+		//boolean offerFirst(E e) 
+       // 在此列表的开头插入指定的元素。 
+		//boolean offerLast(E e) 
+        //在此列表末尾插入指定的元素。 
+		System.out.println(ll.offer("吴林染"));
+		System.out.println(ll.offerFirst("陈良泉"));
+		System.out.println(ll.offerLast("黄家新"));
+		
+	System.out.println("==========迭代器=======================");	
+		//ListIterator<E> listIterator(int index) 
+       // 返回此列表中的元素的列表迭代器（按适当顺序），从列表中指定位置开始 
+		Iterator ti= ll.listIterator(3);
+		while (ti.hasNext()) {
+			Object object = (Object) ti.next();
+			System.out.println(object);
+		}
+		
+		
+	}
+} 
