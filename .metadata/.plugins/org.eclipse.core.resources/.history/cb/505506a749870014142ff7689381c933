@@ -1,0 +1,5 @@
+package com.map;
+
+public interface Set<T> {
+
+}

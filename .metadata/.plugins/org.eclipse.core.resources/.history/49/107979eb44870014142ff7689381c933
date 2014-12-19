@@ -81,10 +81,15 @@ public class CollectionDemo {
 			System.out.println("coll:"+object);
 		}
 		
-		
+		/*使用entryset()
+		 * */
+		Set<Map.Entry<Integer, String>> entry_set= map.entrySet();
+		Iterator<Map.Entry<Integer, String>> it= entry_set.iterator();
+		while (it.hasNext()) {
+			Map<K, V> object = (Map<K, V>) it.next();
 			
 		}
 		
 	}
 
-
+}

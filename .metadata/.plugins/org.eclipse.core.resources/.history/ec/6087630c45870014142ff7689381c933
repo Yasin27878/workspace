@@ -5,8 +5,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
-//Map的基本使用:
+import com.Collection.www.K;
+import com.Collection.www.V;
 
 public class MapDemo {
 
@@ -17,8 +19,6 @@ public class MapDemo {
 			//1.添加元素
 			System.out.println(map.put(123, "google"));
 			System.out.println(map.put(123, "apple"));
-			map.put(null,"你好" );
-			map.put(null, "value");
 			map.put(321,"baidu");
 			map.put(11, "alibaba");
 		
@@ -59,8 +59,7 @@ public class MapDemo {
 				}
 			
 			
-			/*使用entryset() 把map转换成set集合  使用迭代器迭代
-			 * map.entry()类型:映射项=键值对<>
+			/*使用entryset()
 			 * */
 			Set<Map.Entry<Integer, String>> entry_set= map.entrySet();
 			Iterator<Map.Entry<Integer, String>> it= entry_set.iterator();
@@ -71,6 +70,5 @@ public class MapDemo {
 				System.out.println(object);
 			
 	}
-	}
-}
 
+}

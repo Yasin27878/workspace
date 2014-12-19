@@ -18,7 +18,6 @@ public class MapDemo {
 			System.out.println(map.put(123, "google"));
 			System.out.println(map.put(123, "apple"));
 			map.put(null,"你好" );
-			map.put(null, "value");
 			map.put(321,"baidu");
 			map.put(11, "alibaba");
 		
