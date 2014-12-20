@@ -1,0 +1,23 @@
+/*
+ * 3、创建Exe03.java：创建每一种数值型变量，赋值，进行各种“加减乘除”的运算
+ * */
+package com.zuoye.com;
+
+public class Exe03 {
+
+	
+	public static void main(String[] args) {
+		int a=2;
+		int b=3;
+		float c=2.5f;
+		float d=3.6f;
+		double e=3.6;
+		double f=2;
+		
+		System.out.println("a+b="+(a+b)+"   "+"a-b="+(a-b)+"   "+"a*b="+a*b+"   "+"a/b="+a/b);
+		System.out.println("c+d="+(c+d)+"   "+"c-d="+(c-d)+"   "+"c*d="+c*d+"   "+"c/d="+c/d);
+		System.out.println("e+f="+(e+f)+"   "+"e-f="+(e-f)+"   "+"e*f="+e*f+"   "+"e/f="+e/f);
+
+	}
+
+}

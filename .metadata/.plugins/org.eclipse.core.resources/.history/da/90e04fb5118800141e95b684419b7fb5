@@ -1,0 +1,13 @@
+package 作业;
+
+public class PrintTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
