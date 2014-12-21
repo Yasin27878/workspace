@@ -1,17 +1,16 @@
 /*
- * ¶¨ÒåÒ»¸ö±íÊ¾Ñ§ÉúĞÅÏ¢µÄÀàStudent£¬ÒªÇóÈçÏÂ£º
-¡¡£¨1£©ÀàStudentµÄ³ÉÔ±±äÁ¿£º
-            sNOÊ¾Ñ§ºÅ£»sName±íÊ¾ĞÕÃû£»sSex±íÊ¾ĞÔ±ğ£»sAge±íÊ¾ÄêÁä£»          sJava£º±íÊ¾Java¿Î³Ì³É¼¨¡£
-¡¡£¨2£©ÀàStudent´ø²ÎÊıµÄ¹¹Ôì·½·¨£º 
-            ÔÚ¹¹Ôì·½·¨ÖĞÍ¨¹ıĞÎ²ÎÍê³É¶Ô³ÉÔ±±äÁ¿µÄ¸³Öµ²Ù×÷¡£
-  £¨3£©ÀàStudentµÄ·½·¨³ÉÔ±£º
-            getNo£¨£©£º»ñµÃÑ§ºÅ£» 
-            getName£¨£©£º»ñµÃĞÕÃû£» 
-            getSex£¨£©£º»ñµÃĞÔ±ğ£»
-            getAge£¨£©»ñµÃÄêÁä£»
-            getJava£¨£©£º»ñµÃJava ¿Î³Ì³É¼¨
-            ¸ù¾İÀàStudentµÄ¶¨Òå£¬´´½¨Îå¸ö¸ÃÀàµÄ¶ÔÏó£¬Ñ¡ÔñºÏÊÊµÄ¼¯ºÏ´æ´¢£¬Êä³öÃ¿¸öÑ§ÉúµÄĞÅÏ¢£¬  
-            ¼ÆËã²¢Êä³öÕâÎå¸öÑ§ÉúJavaÓïÑÔ³É¼¨µÄÆ½¾ùÖµ£¬ÒÔ¼°¼ÆËã²¢Êä³öËûÃÇJavaÓïÑÔ³É¼¨µÄ×î´óÖµºÍ×îĞ¡Öµ¡£
+ * å®šä¹‰ä¸€ä¸ªè¡¨ç¤ºå­¦ç”Ÿä¿¡æ¯çš„ç±»Studentï¼Œè¦æ±‚å¦‚ä¸‹ï¼š
+ã€€ï¼ˆ1ï¼‰ç±»Studentçš„æˆå‘˜å˜é‡ï¼š
+            sNOç¤ºå­¦å·ï¼›sNameè¡¨ç¤ºå§“åï¼›sSexè¡¨ç¤ºæ€§åˆ«ï¼›sAgeè¡¨ç¤ºå¹´é¾„ï¼›          sJavaï¼šè¡¨ç¤ºJavaè¯¾ç¨‹æˆç»©ã€‚
+ã€€ï¼ˆ2ï¼‰ç±»Studentå¸¦å‚æ•°çš„æ„é€ æ–¹æ³•ï¼š 
+            åœ¨æ„é€ æ–¹æ³•ä¸­é€šè¿‡å½¢å‚å®Œæˆå¯¹æˆå‘˜å˜é‡çš„èµ‹å€¼æ“ä½œã€‚
+  ï¼ˆ3ï¼‰ç±»Studentçš„æ–¹æ³•æˆå‘˜ï¼š
+            getNoï¼ˆï¼‰ï¼šè·å¾—å­¦å·ï¼› 
+            getNameï¼ˆï¼‰ï¼šè·å¾—å§“åï¼› 
+            getSexï¼ˆï¼‰ï¼šè·å¾—æ€§åˆ«ï¼›
+            getAgeï¼ˆï¼‰è·å¾—å¹´é¾„ï¼›
+            getJavaï¼ˆï¼‰ï¼šè·å¾—Java è¯¾ç¨‹æˆç»©
+            æ ¹æ®ç±»Studentçš„å®šä¹‰ï¼Œåˆ›å»ºäº”ä¸ªè¯¥ç±»çš„å¯¹è±¡ï¼Œé€‰æ‹©åˆé€‚çš„é›†åˆå­˜å‚¨ï¼Œè¾“å‡ºæ¯ä¸ªå­¦ç”Ÿçš„ä¿¡æ¯ï¼Œ  è®¡ç®—å¹¶è¾“å‡ºè¿™äº”ä¸ªå­¦ç”ŸJavaè¯­è¨€æˆç»©çš„å¹³å‡å€¼ï¼Œä»¥åŠè®¡ç®—å¹¶è¾“å‡ºä»–ä»¬Javaè¯­è¨€æˆç»©çš„æœ€å¤§å€¼å’Œæœ€å°å€¼ã€‚
             
  * */
 package com.zuoye;
@@ -37,86 +36,53 @@ public class Student implements Comparable{
 		this.sJava = sJava;
 	}
 
-	public int getsNo() {
+	public int getNo() {
 		return sNo;
 	}
 
-	public void setsNo(int sNo) {
+	public void setNo(int sNo) {
 		this.sNo = sNo;
 	}
 
-	public String getsName() {
+	public String getName() {
 		return sName;
 	}
 
-	public void setsName(String sName) {
+	public void setName(String sName) {
 		this.sName = sName;
 	}
 
-	public char getsSex() {
+	public char getSex() {
 		return sSex;
 	}
 
-	public void setsSex(char sSex) {
+	public void setSex(char sSex) {
 		this.sSex = sSex;
 	}
 
-	public int getsAge() {
+	public int getAge() {
 		return sAge;
 	}
 
-	public void setsAge(int sAge) {
+	public void setAge(int sAge) {
 		this.sAge = sAge;
 	}
 
-	public int getsJava() {
+	public int getJava() {
 		return sJava;
 	}
 
-	public void setsJava(int sJava) {
+	public void setJava(int sJava) {
 		this.sJava = sJava;
 	}
 
-	
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + sAge;
-		result = prime * result + sJava;
-		result = prime * result + ((sName == null) ? 0 : sName.hashCode());
-		result = prime * result + sNo;
-		result = prime * result + sSex;
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Student other = (Student) obj;
-		if (sAge != other.sAge)
-			return false;
-		if (sJava != other.sJava)
-			return false;
-		if (sName == null) {
-			if (other.sName != null)
-				return false;
-		} else if (!sName.equals(other.sName))
-			return false;
-		if (sNo != other.sNo)
-			return false;
-		if (sSex != other.sSex)
-			return false;
-		return true;
-	}
 
 	public int compareTo(Object o) {
+		Student t= (Student)o;
 		
-		return 0;
+		int res= this.getJava()-t.getJava();
+
+		return res==0?this.getNo()-t.getNo():res; 
 	}
 	
 	public String toString() {

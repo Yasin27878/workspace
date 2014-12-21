@@ -1,0 +1,13 @@
+/*
+ * 1. 使用合适的集合，统计字符串“13913535174”出现最多的字符次数。
+ * */
+package com.char1.com;
+
+public class CharTest {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

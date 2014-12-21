@@ -1,0 +1,54 @@
+/*
+ * 1. 使用合适的集合，统计字符串“13913535174”出现最多的字符次数。
+ * */
+package com.char1.com;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class CharTest{
+
+	public static void main(String[] args) {
+		
+		String s = "13913535174";
+	
+		
+		ArrayList ts=new ArrayList();
+		
+		long a=Long.parseLong(s);
+		System.out.println(a);
+		
+		
+		for (int i = 0; i < 11; i++) {
+			long n= a%10;
+			a/=10;
+			ts.add(n);	
+		}
+		for (Iterator iterator = ts.iterator(); iterator.hasNext();) {
+			long object = (long) iterator.next();
+			System.out.println(object);
+		}
+		for (int i = 0; i < 11; i++) {
+			int m=0;
+			for (int j = i+1; j <11 ; j++) {
+				if (ts.get(i)==ts.get(j)) {
+					m=m+1;
+					if (j==10) {
+						System.out.println(ts.get(i)+"有"+m+"个");
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		
+		
+	}
+
+	
+	
+
+}
