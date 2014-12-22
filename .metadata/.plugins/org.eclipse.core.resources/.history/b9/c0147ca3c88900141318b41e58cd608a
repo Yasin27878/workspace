@@ -1,0 +1,7 @@
+package com.listtest;
+
+import java.util.Comparator;
+
+public class MyCompator extends Comparator {
+
+}

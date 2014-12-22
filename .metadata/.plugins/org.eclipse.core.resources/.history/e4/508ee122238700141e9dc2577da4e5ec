@@ -1,0 +1,27 @@
+package com.text;
+
+import java.util.TreeSet;
+
+public class TreeSetDemo {
+
+	
+	public static void main(String[] args) {
+		
+		TreeSet ts=new TreeSet(new Comparatorbylengh());
+		
+		ts.add("hello");
+		ts.add("world");
+		ts.add("java");
+		ts.add("jre");
+		System.out.println(ts);
+		
+		
+
+	}
+
+	@Override
+	public String toString() {
+		return "TreeSetDemo [toString()=" + super.toString() + "]";
+	}
+
+}

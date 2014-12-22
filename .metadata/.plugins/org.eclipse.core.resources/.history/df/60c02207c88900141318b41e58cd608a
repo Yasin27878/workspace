@@ -1,0 +1,21 @@
+package com.listtest;
+
+public class ListTest {
+
+	public static void main(String[] args) {
+		
+		
+		c.add(new Student("吴林染",99));
+		c.add(new Student("黄家新",98));
+		c.add(new Student("吴良全",99));
+		c.add(new Student("胡辉",100));
+
+		
+		for (Iterator iterator = c.iterator(); iterator.hasNext();) {
+			Object object = (Object) iterator.next();
+			System.out.println(object);
+		}
+		
+	}
+
+}

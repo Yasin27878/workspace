@@ -1,0 +1,6 @@
+package com.listtest;
+
+
+public class MyCompator extends Comparator {
+
+}

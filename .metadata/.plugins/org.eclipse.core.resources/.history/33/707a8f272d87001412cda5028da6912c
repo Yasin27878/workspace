@@ -1,0 +1,22 @@
+package com.map;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+	
+			Map<Integer, String> map =new HashMap<>();
+		
+			//1.添加元素
+			System.out.println(map.put(123, "google"));
+			System.out.println(map.put(123, "apple"));
+			
+			System.out.println(map);
+			
+			
+	}
+
+}

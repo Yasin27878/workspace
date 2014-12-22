@@ -1,0 +1,21 @@
+package com.text;
+
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedList ll= new LinkedList();
+		for (int i = 0; i < 5; i++) {
+			ll.add("林志玲"+i);
+		}
+		
+		
+	}
+
+}

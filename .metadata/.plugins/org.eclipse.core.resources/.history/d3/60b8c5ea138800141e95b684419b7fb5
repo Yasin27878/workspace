@@ -1,0 +1,16 @@
+/*
+ * 2、创建Exe02.java：创建char变量，赋值（英文字符、中文字符），并打印
+ * */
+package com.zuoye.com;
+
+public class Exe02 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

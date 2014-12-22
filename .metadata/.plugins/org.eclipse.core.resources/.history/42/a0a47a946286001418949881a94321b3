@@ -1,0 +1,38 @@
+package com.text;
+
+import java.util.Collection;
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedList ll= new LinkedList();
+		Collection ll1=new LinkedList();
+		for (int i = 0; i < 10; i++) {
+			ll.add("林志玲"+i);
+		}
+		System.out.println(ll);
+		
+		for (int i = 0; i < 10; i++) {
+			ll.add("周润发"+i);
+		}
+		//add(int index, E element) 在此列表中指定的位置插入指定的元素。
+		ll.add(2, "刘德华");
+		System.out.println(ll);
+		
+		//addAll(Collection<? extends E> c) 添加指定 collection 中的所有元素到此列表的结尾，顺序是指定 collection 的迭代器返回这些元素的顺序。
+	     System.out.println(ll.addAll(3,Collection ll1));
+		
+		//addFirst(E e) 将指定元素插入此列表的开头。
+		ll.addFirst("习大大");
+		System.out.println(ll);
+		
+		
+		
+	}
+} 

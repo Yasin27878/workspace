@@ -1,0 +1,26 @@
+package com.set;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class SetTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Set set = new HashSet();
+
+		set.add("yili");
+		set.add("google");
+		set.add("android");
+		
+		Iterator it= set.iterator();
+		
+		System.out.println(set.add("yili"));
+		System.out.println(set);
+	}
+
+}
