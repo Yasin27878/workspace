@@ -1,0 +1,13 @@
+package com.ArgsDemo;
+
+public class ArgsDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

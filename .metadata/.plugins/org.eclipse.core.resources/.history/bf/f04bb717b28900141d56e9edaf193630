@@ -1,0 +1,20 @@
+package com.ArgsDemo;
+
+public class ArgsDemo {
+
+	public static int sum( int...a){
+		int r=0;
+		for (int i : a) {
+			r+=i;
+		}
+		return r;
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		int rusult=sum(12,13,14,15,26);
+		System.out.println(sum);
+	}
+
+}
