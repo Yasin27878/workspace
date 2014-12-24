@@ -1,15 +1,16 @@
 package com.yili.ticket;
 
 public class One extends Thread {
-	static int ticket=10;
+	private static int ticket=100;
 	static int num =0;
 	
 	public void  run() {
-		for (int i = 0; i <=10; i++) {
+		for (int i = 0; i <=100; i++) {
 			if (ticket>0) {
 				ticket--;
 				num++;
 				System.out.println(getName()+"卖出了第"+num+"张票,还剩"+ticket+"张票");
+				
 			}
 		}
 	}

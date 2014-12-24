@@ -1,0 +1,11 @@
+package com.yili.runable;
+
+public class MyRunable implements Runnable {
+
+	
+	public void run() {
+		
+
+	}
+
+}
