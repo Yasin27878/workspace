@@ -1,6 +1,6 @@
 package com.yili.ticket;	
 
-	public class Share extends Thread {
+	public class Share implements Runnable {
 		private static int ticket=10;
 		static int num =0;
 		
@@ -9,17 +9,18 @@ package com.yili.ticket;
 				if (ticket>0) {
 					ticket--;
 					num++;
-					System.out.println(getName()+"卖出了第"+num+"张票,还剩"+ticket+"张票");
+					System.out.println(Thread.currentThread().getName()+"卖出了第"+num+"张票,还剩"+ticket+"张票");
 				}
 			}
 		}
 		
 		public static void main(String[] args) {
 
-			//Share t= new Share();
-			Share t1=new Share();
-			Share t2=new Share();
-			Share t3=new Share();
+			Share t= new Share();
+			
+			Thread t1=new Thread(t);
+			Thread t2=new Thread(t);
+			Thread t3=new Thread(t);
 			
 			t1.setName("第一个售票窗口");
 			t2.setName("第二个售票窗口");
