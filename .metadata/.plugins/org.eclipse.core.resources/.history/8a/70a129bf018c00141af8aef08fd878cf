@@ -1,0 +1,15 @@
+package com.yili.Dielock;
+
+public class Lock extends Thread {
+	public void  run() {
+		if(flag){
+			while (true) {
+				synchronized (MyLock.objA) {
+					
+				}
+				
+			}
+		}
+	}
+
+}

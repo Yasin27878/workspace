@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="com.text.ComparatorByAge"/>
 <fullyQualifiedTypeName name="com.text.Person"/>
 <fullyQualifiedTypeName name="com.text.Comparatorbylengh"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -42,4 +41,10 @@
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEW"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.yili.Dielock.DieLock"/>
+<fullyQualifiedTypeName name="com.yili.Dielock.MyLock"/>
+<fullyQualifiedTypeName name="com.yili.Dielock.Lock"/>
 </qualifiedTypeNameHistroy>
