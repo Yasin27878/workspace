@@ -1,7 +1,0 @@
-package com.text;
-
-import java.util.Comparator;
-
-public class Comparatorbylengh implements Comparator<T> {
-
-}

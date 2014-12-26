@@ -39,12 +39,18 @@
 <fullyQualifiedTypeName name="java.lang.Process"/>
 <fullyQualifiedTypeName name="com.collection.Person"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEW"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.yili.Dielock.DieLock"/>
 <fullyQualifiedTypeName name="com.yili.Dielock.MyLock"/>
 <fullyQualifiedTypeName name="com.yili.Dielock.Lock"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="com.yili.gongxiang.Resource"/>
+<fullyQualifiedTypeName name="com.yili.gongxiang.Input"/>
+<fullyQualifiedTypeName name="com.yili.gongxiang.Output"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.yili.priority.demo"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.yili.Dielock.JoinDemo"/>
 </qualifiedTypeNameHistroy>
