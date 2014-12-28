@@ -1,0 +1,23 @@
+package com.yili.io;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class IOTest {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		File file=new File("susu.txt");
+		FileWriter fw= new FileWriter(file);
+		
+		
+		fw.write("美女你好!");
+		fw.flush();
+		
+		
+	}
+
+}
