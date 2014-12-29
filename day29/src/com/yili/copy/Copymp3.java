@@ -1,0 +1,46 @@
+package com.yili.copy;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOError;
+import java.io.IOException;
+
+/*
+ * 用四种方法复制文件 查看读写速度
+ * 1.基本流一次读写一个字符           42488毫秒
+ * 2.基本流一次读写一个字符数组    78毫秒
+ * 3.高效流一次读写一个字符	  438毫秒
+ * 4.高效流一次读写一个字符数组   31毫秒
+ * 
+ * */
+
+public class Copymp3 {
+	public static void main(String[] args) throws IOException {
+		long start=System.currentTimeMillis();
+		
+		
+		methods1("d:\\刘德华17岁.mp3","17age.mp3");
+		//methods2("d:\\刘德华17岁.mp3","17age.mp3");
+		//methods3("d:\\刘德华17岁.mp3","17age.mp3");
+		//methods4("d:\\刘德华17岁.mp3","17age.mp3");
+		long end=System.currentTimeMillis();
+		System.out.println("一共用时:"+(end-start)+"毫秒");
+	}
+
+	private static void methods1(String string, String string2) throws IOException {
+		BufferedInputStream fis=new BufferedInputStream(new FileInputStream(string));
+		BufferedOutputStream fos=new BufferedOutputStream(new FileOutputStream(string2));
+		byte[] by=new byte[1024];
+		int n=0;
+		while ((n=fis.read(by))!=-1) {
+			fos.write(by,0,n);
+		}
+		fis.close();
+		fos.close();
+		
+	}
+
+}

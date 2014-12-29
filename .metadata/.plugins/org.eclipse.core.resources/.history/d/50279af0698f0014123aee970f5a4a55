@@ -1,0 +1,10 @@
+package com.yili.copy;
+
+public class Copymp3 {
+	public static void main(String[] args) {
+		long start=System.currentTimeMillis();
+		long end=System.currentTimeMillis();
+		methods1("d:\\刘德华17岁.mp3","17age.mp3");
+	}
+
+}
