@@ -1,0 +1,12 @@
+package com.yili.net;
+
+import java.net.InetAddress;
+
+public class InetAddressTest {
+
+	public static void main(String[] args) {
+		//根据主机来获取对应的inetadress实例
+		InetAddress ip=InetAddress.getAllByName("wwww.yili.com");
+		
+	}
+}

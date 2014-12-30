@@ -1,0 +1,5 @@
+package com.yili.IO;
+
+public class RedirStdio {
+
+}

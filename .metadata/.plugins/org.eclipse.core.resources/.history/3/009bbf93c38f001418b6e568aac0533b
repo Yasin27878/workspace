@@ -1,0 +1,22 @@
+package com.yili.IO;
+
+import java.io.StringReader;
+
+public class Ffiles {
+	public static void main(String[] args) {
+		//使用内存中的字符串作为数据源
+		
+		String src= "aaaaaaaaaaaaaaaaaaaaaaa"+
+					"bbbbbbbbbbbbbbbbbbbbbbb"+
+					"ccccccccccccccccccccccc"+
+					"ddddddddddddddddddddddd";
+		char[] buff=new char[32];
+		int len=0;
+		StringReader sr=new StringReader(src);
+		while ((len=sr.read(buff))!=-1) {
+			System.out.println(new String(buff,0,len));
+		}
+		
+	}
+
+}
