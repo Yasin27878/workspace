@@ -1,0 +1,9 @@
+package com.yili.net;
+
+public class URLDecoderTest {
+
+	public static void main(String[] args) {
+		String keyWord=URLDecoderTest.decode("%B7%E8%BF%8F1java","GBK");
+		
+	}
+}

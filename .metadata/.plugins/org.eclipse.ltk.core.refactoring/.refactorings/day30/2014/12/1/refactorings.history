@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;InetAddressTest.java&apos; to &apos;day31/src/com.yili.net&apos;&#x0D;&#x0A;- Original project: &apos;day30&apos;&#x0D;&#x0A;- Destination element: &apos;day31/src/com.yili.net&apos;&#x0D;&#x0A;- Original element: &apos;com.yili.net.InetAddressTest.java&apos;" description="Copy compilation unit" destination="=day31/src&lt;com.yili.net" element1="/src&lt;com.yili.net{InetAddressTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1419990834830" units="1" version="1.0"/>
+</session>
